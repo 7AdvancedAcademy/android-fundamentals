@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ScrollingText</string>
+    <string name="action_settings">Settings</string>
+    <string name="article_title">Essential Guide For Designing Your Android App Architecture</string>
+    <string name="articleOnAndroid">
+
+        If you make your foundations strong, then you can rise high and touch the sky.
+        Android framework does not advocate any specific way to design your application. That in a way, make us more powerful and vulnerable at the same time.<br></br>
+
+        Why am I even thinking about this, when I am provided with Activity and I can, in essence, write my entire implementation using few Activities?
+        (For more help call the +237 655505753)
+
+        Over the years writing code for Android, I have realized that solving a problem or implementing a feature at that point of time is not enough. Your app goes through a lot of change cycles and features addition/removal. Incorporating these over a period of time creates havoc in your application if not designed properly with separation of concern. That is why I have come up with a guide that I follow religiously for all my architectural designs from the very single code I write for that application.<br /><br />
+
+        The principles presented in the MVP philosophy is by far the best I have come across.
+        What is an MVP and why should we explore it?
+
+        Let’s take a ride into the past. Most of us started creating an Android app with Activity at the center and capable of deciding what to do and how to fetch data. Activity code over a period of time started to grow and became a collection of non-reusable components. We then started packaging those components and the Activity could use them through the exposed apis of these components. We started to take pride and began breaking codes into pieces as much as possible. Then we found ourselves in an ocean of components with hard to trace dependencies and usage. Also, we later got introduced to the concept of testability and found that regression is much safer if it’s written with tests. We felt that the jumbled code that we have developed in the above process is very tightly coupled with the Android apis, preventing us to do JVM tests and also hindering an easy design of test cases. This is the classic MVC with Activity or Fragment acting as a Controller.<br /><br />
+
+        So, we formulated few principles that solved most of the above-mentioned problems if implemented carefully. Those principles, we call as MVP (Model-View-Presenter) design pattern.<br />
+
+        Full article on https://blog.mindorks.com/essential-guide-for-designing-your-android-app-architecture-mvp-part-1-74efaf1cda40
+
+
+
+    </string>
+    <string name="title_activity_details">Details Activity</string>
+
+</resources>

@@ -46,6 +46,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
+            <EditText
+                android:id="@+id/userInputZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textHint"
+                android:layout_marginTop="30dp"/>
+
         </LinearLayout>
 
     </ScrollView>

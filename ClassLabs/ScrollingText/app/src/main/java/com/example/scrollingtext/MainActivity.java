@@ -9,8 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView mTextView ;
+    String article ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +23,24 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        mTextView = findViewById(R.id.android_article);
+        article = mTextView.getText().toString();
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+
+               intent.putExtra("copiedArticle", article);
                startActivity(intent);
+
+
             }
         });
+
+
+
+
     }
 
     @Override

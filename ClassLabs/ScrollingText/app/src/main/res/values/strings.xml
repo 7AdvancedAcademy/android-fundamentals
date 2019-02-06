@@ -25,5 +25,6 @@
 
     </string>
     <string name="title_activity_details">Details Activity</string>
+    <string name="textHint">Leave a review of the article</string>
 
 </resources>

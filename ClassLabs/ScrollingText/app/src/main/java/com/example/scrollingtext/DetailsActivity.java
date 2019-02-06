@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class DetailsActivity extends AppCompatActivity {
 
@@ -19,6 +20,15 @@ public class DetailsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        String article = getIntent().getStringExtra("copiedArticle");
+
+        // Manipulating the text attributs (size and color)
+        TextView mTextView = findViewById(R.id.text_zone);
+        mTextView.setText(article);
+        mTextView.setTextSize(30);
+        mTextView.setTextColor(getResources().getColor(R.color.title_color));
+
     }
 
 
@@ -27,9 +37,6 @@ public class DetailsActivity extends AppCompatActivity {
         Uri uri = Uri.parse("http://www.google.com");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
-
-
-
 
     }
 
